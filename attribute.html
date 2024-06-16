@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Attribute Selector</title>
+    <style>
+      a {
+        color: yellowgreen;
+      }
+      a[target]:hover {
+        color: red;
+      }
+      a[target="_self"]:hover {
+        color: black;
+      }
+
+      /* p[title~="belajar"] {
+        color: blue;
+      } */
+
+      /* p[title|="belajar"] {
+        color: aqua;
+      } */
+
+      /* p[title^="belajar"] {
+        color: orange;
+      } */
+
+      /* p[title$="belajar"] {
+        color: orange;
+      } */
+
+      /* p[title*="belajar"] {
+        color: orange;
+      } */
+
+      [title*="belajar"] {
+        color: burlywood;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Belajar Attribute Selector</h1>
+    </header>
+    <nav>
+      <a href="https://www.rhezawira.com" target="_self">Portfolio</a>
+      <a href="https://www.linkedin.com/in/reza4official" target="_blank"
+        >LinkedIn</a
+      >
+      <a href="https://www.instagram.com/reza4official_" target="_self"
+        >Instagram</a
+      >
+      <a href="https://www.github.com/reza4official">GitHub</a>
+
+      <p title="belajar coding">Ini Dipilih</p>
+      <p title="belajarcoding">Ini Tidak Dipilih</p>
+      <p title="belajar-coding">Ini Dipilih</p>
+      <p title="belajar">Ini Dipilih</p>
+      <p title="coding belajar">Ini Tidak Dipilih</p>
+      <span title="belajar pemrograman">Ini contoh span</span>
+    </nav>
+  </body>
+</html>
